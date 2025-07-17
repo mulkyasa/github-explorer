@@ -13,7 +13,7 @@ A simple React + TypeScript application to search GitHub users and explore their
 
 ## Live Demo
 
-[View the live demo here](https://mulkyasa.github.io/github-explorer)
+[View the live demo here](https://github-explorer-three-tan.vercel.app)
 
 > Replace with your actual GitHub Pages URL
 
@@ -41,6 +41,8 @@ A simple React + TypeScript application to search GitHub users and explore their
 1. Clone the project:
 
 ```bash
-git clone https://github.com/your-username/github-explorer.git
+git clone https://github.com/mulkyasa/github-explorer.git
 cd github-explorer
+yarn install
+yarn dev
 ```
