@@ -25,20 +25,24 @@ export default function App() {
   };
 
   return (
-    <div className="min-h-screen bg-gray-100 p-4">
+    <div className="min-h-screen bg-white p-4">
       <div className="max-w-xl mx-auto space-y-6">
         <SearchInput onSearch={handleSearch} loading={loading} />
 
-        {query && (
+        {query && users.length > 0 && (
           <p className="text-sm text-gray-600">
             Showing users for "<span className="font-medium">{query}</span>"
           </p>
         )}
 
         <div className="space-y-4">
-          {users.map((user) => (
-            <UserCard key={user.id} user={user} />
-          ))}
+          {users.length === 0 && query && !loading ? (
+            <p className="text-sm text-gray-500">
+              No users found for "{query}".
+            </p>
+          ) : (
+            users.map((user) => <UserCard key={user.id} user={user} />)
+          )}
         </div>
       </div>
     </div>
