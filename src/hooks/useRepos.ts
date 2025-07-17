@@ -15,7 +15,7 @@ export function useRepos(username: string) {
         setRepos(data);
         setError('');
       })
-      .catch((err) => {
+      .catch(() => {
         setError('Failed to load repos');
         setRepos(null);
       })
