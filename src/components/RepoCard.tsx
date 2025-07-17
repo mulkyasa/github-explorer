@@ -6,7 +6,7 @@ type RepoCardProps = {
 
 export default function RepoCard({ repo }: RepoCardProps) {
   return (
-    <div className="border p-3 rounded-md bg-gray-50">
+    <div className="bg-white border border-gray-200 rounded-md p-3 shadow-sm hover:shadow transition">
       <div className="flex justify-between items-center">
         <h3 className="font-semibold">{repo.name}</h3>
         <span className="text-sm text-yellow-600">
