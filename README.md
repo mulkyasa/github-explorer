@@ -15,8 +15,6 @@ A simple React + TypeScript application to search GitHub users and explore their
 
 [View the live demo here](https://github-explorer-three-tan.vercel.app)
 
-> Replace with your actual GitHub Pages URL
-
 ## Preview
 
 ![App Screenshot](./public/preview.png)
